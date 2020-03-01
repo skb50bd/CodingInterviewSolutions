@@ -29,8 +29,8 @@ namespace HotelBookingsPossible
             int totalRooms)
         {
             var events =
-                (arrivals.Select(a => (date: a, type: Arrival))
-                    .Union(departures.Select(d => (date: d, type: Departure))))
+                arrivals.Select(a => (date: a, type: Arrival))
+                    .Union(departures.Select(d => (date: d, type: Departure)))
                 .OrderBy(e => e.date);
 
             var count = 0;
