@@ -1,21 +1,10 @@
-﻿using System;
 using System.Linq;
 
-namespace MaximumUnsortedSubarray
+namespace Library
 {
-    class Program
+    public static class MaxUnsortedSubarray
     {
-        static void Main(string[] args)
-        {
-            var input = new[] { 1, 2, 4, 5, 6, 7, 3, 5, 6 };
-            // var input = new[] { 1, 2, 4, 3, 5, 6 };
-
-            var (start, end) = GetUnsortedIndices(input);
-
-            Console.WriteLine($"[ {string.Join(", ", input[start..end])} ]");
-        }
-
-        private static (int start, int end) GetUnsortedIndices(int[] input)
+        public static (int start, int end) FindUnsortedIndices(this int[] input)
         {
             var len = input?.Length ?? 0;
             if (len == 0 || len == 1)
@@ -63,7 +52,7 @@ namespace MaximumUnsortedSubarray
                 }
             }
 
-            return (start, end);
+            return (start, end - 1);
         }
     }
 }

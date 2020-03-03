@@ -1,30 +1,8 @@
-﻿using System;
 using System.Collections.Generic;
 
-namespace SpiralMatrix
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // var inputMatrix = new int[][] {
-            //     new [] { 1, 2, 3 },
-            //     new [] { 4, 5, 6 },
-            //     new [] { 7, 8, 9 }
-            // };
-
-            var inputMatrix = new int[][] {
-                new [] { 01, 02, 03, 04 },
-                new [] { 05, 06, 07, 08 },
-                new [] { 09, 10, 11, 12 },
-                new [] { 13, 14, 15, 16 } 
-            };
-
-            var result = GeSpiralArray(inputMatrix);
-            Console.WriteLine(string.Join(", ", result));
-        }
-
-        static int[] GeSpiralArray(int[][] inputMatrix)
+namespace Library {
+    public static class MatrixOperations {
+        public static int[] TraverseSpiral(this int[][] inputMatrix)
         {
             var linearArray = new List<int>();
 
@@ -79,5 +57,5 @@ namespace SpiralMatrix
 
             return linearArray.ToArray();
         }
-    }
+    } 
 }

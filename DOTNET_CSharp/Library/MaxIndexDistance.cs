@@ -1,21 +1,8 @@
-﻿using System;
 using static System.Math;
 
-namespace MaxDistance
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var array = new int[] {
-                3, 5, 4, 2
-            };
-
-            var maxDistance = GetMaxIndexDistance(array);
-            Console.WriteLine(maxDistance);
-        }
-
-        static int GetMaxIndexDistance(int[] array)
+namespace Library {
+    public static class MaxIndexDistance {
+        public static int CalculateMaxIndexDistance(this int[] array)
         {
             // Construct a left to right Min-Array (n)
             var LMin = new int[array.Length];            
