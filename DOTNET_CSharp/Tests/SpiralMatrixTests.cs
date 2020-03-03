@@ -18,6 +18,9 @@ namespace Tests {
 
             // Act
             var actual = input.TraverseSpiral();
+
+            // Assert
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -34,6 +37,9 @@ namespace Tests {
 
             // Act
             var actual = input.TraverseSpiral();
+            
+            // Assert
+            Assert.Equal(expected, actual);
         }
     }
 }
