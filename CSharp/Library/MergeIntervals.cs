@@ -13,7 +13,7 @@ namespace Library
         /// <returns>Overlap-merged array of intervals</returns>
         public static Interval[] MergeOverlaps (
             this Interval[] input) 
-            {
+        {
             var output = new Stack<Interval>();
 
             foreach (var interval in input)

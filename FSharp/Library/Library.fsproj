@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Utils.fs" />
+    <Compile Include="Math.fs" />
+    <Compile Include="ArraySearch.fs" />
+    <Compile Include="GridPaths.fs" />
+    <Compile Include="HotelBookingsPossible.fs" />
+    <Compile Include="Intervals.fs" />
+  </ItemGroup>
+
+</Project>

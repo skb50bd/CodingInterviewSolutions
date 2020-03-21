@@ -5,8 +5,8 @@ namespace Library {
         public static int CountUniquePathsConst(int rows, int columns) {
             --rows;
             --columns;
-            return Factorial(rows + columns) 
-                / (Factorial(rows) * Factorial(columns));
+            return FactorialTail(rows + columns) 
+                / (FactorialTail(rows) * FactorialTail(columns));
         }
 
         public static int CountUniquePathsDP(int rows, int columns) {

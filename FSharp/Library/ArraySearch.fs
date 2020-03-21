@@ -4,7 +4,7 @@ module ArraySearch =
     let rec searchIndex (ar: int list) item startIndex endIndex =
         if ar.[startIndex] > item then
             startIndex - 1
-        else if ar.[endIndex] < item then 
+        elif ar.[endIndex] < item then 
             endIndex + 1
         else
             let mid = (endIndex + startIndex) / 2

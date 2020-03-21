@@ -8,7 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Tests.fs" />
+    <Compile Include="ArraySearchTests.fs" />
+    <Compile Include="GridPathTests.fs" />
+    <Compile Include="HotelBookingsPossibleTests.fs" />
+    <Compile Include="IntervalsTests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
