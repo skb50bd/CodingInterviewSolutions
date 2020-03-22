@@ -29,30 +29,22 @@ module Matrix =
                     | Direction.Right ->
                         let current =
                             [| for i in [ l .. r ] -> matrix.[t, i] |]
-                        Array.concat
-                            [ current
-                              rest() ]
-
+                        [| yield! current; yield! rest() |]
+  
                     | Direction.Down ->
                         let current =
                             [| for i in [ (t + 1) .. b ] -> matrix.[i, r] |]
-                        Array.concat
-                            [ current
-                              rest() ]
+                        [| yield! current; yield! rest() |]
 
                     | Direction.Left ->
                         let current =
                             [| for i in [ (r - 1) .. (-1) .. l ] -> matrix.[b, i] |]
-                        Array.concat
-                            [ current
-                              rest() ]
+                        [| yield! current; yield! rest() |]
 
                     | Direction.Up ->
                         let current =
                             [| for i in [ (b - 1) .. (-1) .. (t + 1) ] -> matrix.[i, l] |]
-                        Array.concat
-                            [ current
-                              rest'() ]
+                        [| yield! current; yield! rest'() |]
 
                     | _ -> Array.empty
 
