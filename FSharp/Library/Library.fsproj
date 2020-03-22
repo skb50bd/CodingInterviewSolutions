@@ -12,6 +12,7 @@
     <Compile Include="GridPaths.fs" />
     <Compile Include="HotelBookingsPossible.fs" />
     <Compile Include="Intervals.fs" />
+    <Compile Include="Matrix.fs" />
   </ItemGroup>
 
 </Project>

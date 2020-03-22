@@ -12,6 +12,7 @@
     <Compile Include="GridPathTests.fs" />
     <Compile Include="HotelBookingsPossibleTests.fs" />
     <Compile Include="IntervalsTests.fs" />
+    <Compile Include="MatrixTests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

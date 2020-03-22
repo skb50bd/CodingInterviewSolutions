@@ -11,12 +11,9 @@ namespace Library {
 
             var n = inputMatrix[0].Length;
 
-            var left = 0;
-            var right = n - 1;
-            var top = 0;
-            var bottom = m - 1;
+            var (direction, left, right, top, bottom) = 
+                (0, 0, n - 1, 0, m - 1);
 
-            var direction = 0;
             while (true)
             {
                 if (direction == 0)
