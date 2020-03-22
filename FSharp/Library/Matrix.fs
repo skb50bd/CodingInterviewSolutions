@@ -7,7 +7,7 @@ module Matrix =
         | Left = 2
         | Up = 3
 
-    let TraverseSpiral(matrix: int [,]) =
+    let TraverseSpiral matrix =
         match Array2D.length1 matrix with
         | 0 -> Array.empty
 
